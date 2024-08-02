@@ -1,0 +1,11 @@
+@mixin cube {
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            position: absolute;
+            left: -24px;
+            top: 5px;
+        }
+}

@@ -1,0 +1,28 @@
+@import "bootstrap/scss/bootstrap";
+@import "wow.js/css/libs/animate.css";
+
+@import "config/colors.scss";
+@import "config/fonts.scss";
+@import "config/mixins";
+@import "config/global.scss";
+@import "sections/header.scss";
+
+
+// Frequently used styles
+
+.btn {
+    padding: 18px 24px;
+    color: #fff;
+    line-height: 12px;
+    font-family: 'Oswald', 'Courier New', Courier, monospace;
+    font-weight: 500;
+    border-radius: 0 !important;
+}
+
+.btn--purple {
+    background-color: $secondary-color;
+    &:hover {
+        color: #000 !important;
+        background-color: #fff;
+    }
+}
