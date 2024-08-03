@@ -5,6 +5,7 @@ section.challenges {
     justify-content: center;
     background: url("../images/Oval.png") no-repeat center;
     position: relative;
+    margin-bottom: 150px;
     .accept-ch {
         display: flex;
         flex-direction: column;
@@ -65,9 +66,157 @@ section.challenges {
     }
 }
 
+section.courses {
+    padding: 56px;
+    .float-start {
+        h1 {
+            font-size: 115px;
+            font-weight: bold;
+        }
+        span {
+            font-size: 38px;
+        }
+    }
+
+    .edition-bottom {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        letter-spacing: 4px;
+        font-weight: bold;
+        justify-content: center;
+        margin-top: 10px;
+        p {
+            @include cube;
+            &::before {
+                top: 6px;
+            }
+        }
+        span {
+            font-size: 35px;
+            line-height: 35px;
+            font-weight: bolder;
+        }
+    }
+
+    .cards {
+        margin-top: 96px;
+        .card {
+            background-color: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 0;
+            min-height: 375px;
+            max-width: 290px;
+            .card-body {
+                padding: 80px 40px 32px;
+                .card-title {
+                    font-size: 33px;
+                    font-weight: bold;
+                    position: relative;
+                    padding-bottom: 20px;
+                    margin-bottom: 22px;
+                    ::after {
+                        content: "";
+                        width: 54px;
+                        height: 2px;
+                        border-radius: 1px;
+                        background-color: $secondary-color;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    span {
+                        color: $secondary-color;
+                    }
+                }
+                .card-text {
+                    font-size: 14px;
+                    line-height: 26px;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 40px;
+                }
+                .card-num {
+                    height: 42px;
+                    width: 42px;
+                    color: $main-color;
+                    background-color: #fff;
+                    font-size: 20px;
+                    line-height: 40px;
+                    font-weight: bold;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+
+    .more-courses {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        a {
+            font-size: 23px;
+            line-height: 23px;
+            transition: all 0.5s ease;
+            img {
+                transition: all 0.5s ease;
+                transform: translateX(20px);
+            }
+
+            &:hover {
+                img {
+                    transform: translateX(40px);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) and (min-width: 991.8px) {
+    section.courses {
+        .cards {
+            .card {
+                .card-body {
+                    padding: 80px 25px 32px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.8px) {
+    section.courses {
+        padding: 0px 56px;
+
+        .cards {
+            margin-top: 60px;
+        }
+        .float-start {
+            h1 {
+                font-size: 95px;
+            }
+            span {
+                font-size: 28px;
+            }
+        }
+
+        .edition-bottom {
+            font-size: 15px;
+            margin-top: 6px;
+            span {
+                font-size: 31px;
+            }
+        }
+    }
+}
+
 @media (max-width: 767.9px) {
     section.challenges {
-
         background-size: contain;
         .accept-ch {
             font-size: 55px;
@@ -78,18 +227,68 @@ section.challenges {
             font-size: 12px;
         }
 
-        .about, .explore {
+        .about,
+        .explore {
             font-size: 25px;
+        }
+    }
+
+    section.courses {
+        .float-start {
+            h1 {
+                font-size: 75px;
+            }
+            span {
+                font-size: 22px;
+            }
+        }
+        .edition-bottom {
+            margin-top: 2px;
+        }
+        .cards {
+            margin-top: 35px;
+            .card {
+                max-width: 75%;
+                margin-bottom: 60px;
+                .card-body {
+                    padding: 70px 30px 25px;
+                }
+            }
+        }
+        .more-courses {
+            margin-top: 30px;
         }
     }
 }
 
-@media (max-width:575.9px) {
+@media (max-width: 575.9px) {
     section.challenges {
         height: 600px;
         .accept-ch {
             font-size: 40px;
             line-height: 60px;
+        }
+    }
+
+    section.courses {
+        padding: 0;
+        .float-start {
+            width: 100%;
+            h1 {
+                font-size: 60px;
+            }
+            span {
+                font-size: 18px;
+            }
+        }
+
+        .cards {
+            .card {
+                max-width: 85%;
+                .card-body {
+                    padding: 60px 30px 22px;
+                }
+            }
         }
     }
 }
