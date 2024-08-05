@@ -95,12 +95,14 @@ a.nav-link {
     padding-top: 25px;
 }
 
-.swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-        filter: grayscale(100%);
+section.header-swiper {
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            filter: grayscale(100%);
+        }
     }
 }
 

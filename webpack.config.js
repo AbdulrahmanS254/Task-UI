@@ -38,6 +38,14 @@ module.exports = {
             },
 
             {
+                test: /\.(mp4|webm|ogg)$/,
+                type: "asset/resource",
+                generator: {
+                    filename: "assets/vids/[name][ext]",
+                },
+            },
+
+            {
                 test: /\.(svg|eot|woff|woff2|ttf)$/,
                 exclude: /images/,
                 type: "asset/resource",

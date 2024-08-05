@@ -177,6 +177,202 @@ section.courses {
     }
 }
 
+section.about {
+    padding: 150px 0px 350px;
+    background-image: url("/src/assets/images/Oval-2.png"), url("/src/assets/images/Oval-3.png");
+    background-position:
+        left top,
+        right bottom;
+    background-repeat: no-repeat;
+    h1.about-title {
+        font-size: 58px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        span {
+            color: $secondary-color;
+            font-weight: normal;
+            letter-spacing: 5px;
+        }
+    }
+
+    p.about-text {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        width: 70%;
+        text-align: justify;
+        margin-bottom: 55px;
+    }
+
+    ul.about-list {
+        list-style: none;
+        padding-left: 15px;
+        flex-wrap: wrap;
+        gap: 55px 120px;
+        margin-bottom: 75px;
+        .about-item {
+            display: inline-block;
+            position: relative;
+            font-size: 14px;
+            font-weight: bold;
+            @include cube;
+            &::before {
+                background-color: $secondary-color;
+                width: 8px;
+                height: 8px;
+                top: 6px;
+                left: -15px;
+            }
+        }
+    }
+
+    .top-right-circle,
+    .bottom-left-circle {
+        width: 22px;
+        height: 22px;
+        background-color: $secondary-color;
+        border-radius: 11px;
+        &.top-right-circle {
+            right: 10%;
+            top: 0;
+        }
+        &.bottom-left-circle {
+            left: 40%;
+            bottom: -50px;
+        }
+    }
+}
+
+section.why-us {
+    h1.about-title {
+        font-size: 58px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        span {
+            color: $secondary-color;
+            font-weight: normal;
+            letter-spacing: 5px;
+        }
+    }
+
+    p.about-text {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 600;
+        text-align: justify;
+        margin-bottom: 55px;
+    }
+
+    .explore-right {
+        writing-mode: tb-rl;
+        letter-spacing: 8px;
+        right: -35px;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        font-size: 100px;
+        line-height: 120px;
+        font-weight: bold;
+        color: #252525;
+    }
+}
+
+section.video-section {
+    position: relative;
+    padding: 150px 55px;
+    .video-thumbnail {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+    }
+
+    .ready-start {
+        transform: translateY(-50%) rotate(-90deg);
+        right: 0;
+        top: 50%;
+        p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .ready-start-left {
+        transform: translateY(-50%) rotate(90deg);
+        left: 0;
+        top: 50%;
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            transform: rotate(180deg);
+            text-align: end;
+        }
+    }
+}
+
+section.users {
+    h1 {
+        font-size: 94px;
+        font-weight: bold;
+        span {
+            color: $secondary-color;
+            font-weight: normal;
+            font-size: 42px !important;
+        }
+    }
+    .card {
+        background-color: transparent;
+        border: 0;
+        color: #aeaeae;
+        width: 80%;
+        padding: 20px 25px 30px;
+        .card-img {
+            width: 178px;
+            height: 178px;
+        }
+        .card-title {
+            font-size: 19px;
+            line-height: 26px;
+            font-weight: 600;
+        }
+        .rating {
+            .active {
+                color: $secondary-color;
+            }
+        }
+
+        .card-text {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            text-align: justify;
+            span.qoute {
+                left: -24px;
+                top: -7.5px;
+            }
+            span.flipped {
+                bottom: -7.5px;
+                right: -22px;
+            }
+        }
+    }
+
+    .swiper-button-next {
+        right: 38%;
+        top: 95%;
+    }
+    .swiper-button-prev {
+        left: 38%;
+        top: 95%;
+    }
+}
+
+/*========================= MEDIA QUERIES =========================*/
 @media (max-width: 1250px) and (min-width: 991.8px) {
     section.courses {
         .cards {
@@ -185,6 +381,14 @@ section.courses {
                     padding: 80px 25px 32px;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 1205px) {
+    section.users {
+        .card {
+            width: 100%;
         }
     }
 }
@@ -211,6 +415,19 @@ section.courses {
             span {
                 font-size: 31px;
             }
+        }
+    }
+
+    section.about {
+        padding: 75px 0px 175px;
+        p.about-text {
+            width: 100%;
+        }
+        ul.about-list {
+            justify-content: flex-start;
+        }
+        img {
+            margin-bottom: 50px;
         }
     }
 }
@@ -259,6 +476,58 @@ section.courses {
             margin-top: 30px;
         }
     }
+
+    section.about {
+        text-align: center;
+    }
+
+    section.why-us {
+        text-align: center;
+        img {
+            margin-top: 50px;
+        }
+
+        .explore-right {
+            z-index: -5;
+            opacity: 50%;
+        }
+    }
+
+    section.video-section {
+        padding: 50px 20px;
+
+        .video-thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+
+        .ratio-16x9 {
+            height: auto;
+        }
+
+        .play-button {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    section.users {
+        h1 {
+            font-size: 80px;
+            span {
+                font-size: 38px !important;
+            }
+        }
+        .swiper {
+            margin-top: 0;
+        }
+        .swiper-button-next {
+            right: 25%;
+        }
+        .swiper-button-prev {
+            left: 25%;
+        }
+    }
 }
 
 @media (max-width: 575.9px) {
@@ -289,6 +558,29 @@ section.courses {
                     padding: 60px 30px 22px;
                 }
             }
+        }
+    }
+
+    section.about {
+        padding: 50px 0px 100px;
+        h1.about-title {
+            font-size: 38px;
+            margin-bottom: 25px;
+        }
+        p.about-text {
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    section.why-us {
+        h1.about-title {
+            font-size: 38px;
+            margin-bottom: 25px;
+        }
+        p.about-text {
+            width: 100%;
+            font-size: 16px;
         }
     }
 }

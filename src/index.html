@@ -25,7 +25,7 @@
                             <a class="nav-link px-0 active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link px-0" href="#">About</a>
+                            <a class="nav-link px-0" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link px-0" href="#">Courses</a>
@@ -203,13 +203,13 @@
             <div class="row">
                 <div class="clearfix text-center">
                     <div class="float-start">
-                        <div class="find">
+                        <div class="find wow slideInLeft">
                             <h1 class="d-inline-block">FIND</h1>
                             <span>Your Course.</span>
                         </div>
                     </div>
                     <div class="float-end d-none d-sm-flex h-100">
-                        <div class="edition-bottom position-relative">
+                        <div class="edition-bottom position-relative wow slideInRight">
                             <p class="mb-0 position-relative">EDITION</p>
                             <span>2024</span>
                         </div>
@@ -217,7 +217,7 @@
                 </div>
             </div>
             <div class="row cards">
-                <div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-center wow slideInLeft">
                     <div class="card">
                         <div class="card-body text-center">
                             <div class="card-num position-absolute">.01</div>
@@ -228,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 d-flex justify-content-center wow slideInLeft">
                     <div class="card">
                         <div class="card-body text-center">
                             <div class="card-num position-absolute">.02</div>
@@ -239,7 +239,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 d-none d-lg-flex justify-content-center">
+                <div class="col-xl-3 col-lg-4 d-none d-lg-flex justify-content-center wow slideInRight">
                     <div class="card">
                         <div class="card-body text-center">
                             <div class="card-num position-absolute">.03</div>
@@ -250,7 +250,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 d-none d-xl-flex justify-content-center">
+                <div class="col-xl-3 col-lg-4 d-none d-xl-flex justify-content-center wow slideInRight">
                     <div class="card">
                         <div class="card-body text-center">
                             <div class="card-num position-absolute">.04</div>
@@ -262,10 +262,462 @@
                     </div>
                 </div>
             </div>
-            <div class="more-courses">
+            <div class="more-courses wow slideInLeft">
                 <a href="#" class="btn">More Courses<img src="./assets/images/Arrow-right.png" alt="arrow"></a>
             </div>
         </section>
+
+        <section class="about mt-5" id="about">
+            <div class="container">
+                <div class="row position-relative">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                        <h1 class="about-title">About <span>us.</span></h1>
+                        <p class="about-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua Quis ipsum suspendisse.
+                        </p>
+                        <ul class="about-list d-flex">
+                            <li class="about-item">
+                                LOREM IPSUM DOLOR.
+                            </li>
+                            <li class="about-item">
+                                LOREM IPSUM DOLOR.
+                            </li>
+                            <li class="about-item">
+                                LOREM IPSUM DOLOR.
+                            </li>
+                            <li class="about-item">
+                                LOREM IPSUM DOLOR.
+                            </li>
+                        </ul>
+                        <div class="foot"><a href="#" class="btn btn--purple">READ MORE</a></div>
+                    </div>
+                    <div
+                        class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center position-relative">
+                        <img src="./assets/images/About-man.png" class="img-fluid" alt="man">
+                    </div>
+                    <div class="top-right-circle position-absolute" alt=""></div>
+                    <div class="bottom-left-circle position-absolute" alt=""></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us position-relative overflow-hidden">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-1 order-lg-2 d-flex flex-column justify-content-center ps-lg-5">
+                        <h1 class="about-title">Why <span>us.</span></h1>
+                        <p class="about-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua Quis ipsum suspendisse consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua Quis ipsum suspendisse.
+                        </p>
+                        <div class="foot"><a href="#" class="btn btn--purple">READ MORE</a></div>
+                    </div>
+                    <div
+                        class="col-lg-6 order-2 order-lg-1 d-flex align-items-center justify-content-center position-relative">
+                        <img src="./assets/images/Why-man.png" class="img-fluid" alt="man">
+                    </div>
+                </div>
+            </div>
+            <div class="explore-right position-absolute">EXPLORE</div>
+        </section>
+
+        <section class="video-section position-relative">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10">
+                        <div class="video-thumbnail" id="video-thumbnail-container">
+                            <img src="./assets/images/start-now.png" class="img-fluid" alt="Video Thumbnail"
+                                id="video-thumbnail">
+                            <div class="play-button" id="play-button">
+                                <img src="./assets/images/Play-button.png" class="img-fluid" alt="play">
+                            </div>
+                        </div>
+                        <div class="ratio ratio-16x9" id="video-container" style="display: none;">
+                            <video controls id="video-player">
+                                <source src="./assets/vids/Promotional-Video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ready-start d-none d-md-flex align-items-center justify-content-center position-absolute">
+                <img src="./assets/images/Arrow-thick-r.png" class="me-3" alt="arrow">
+                <p class="d-inline-block m-0">READY TO <span class="d-block">GET STARTED</span></p>
+            </div>
+            <div
+                class="ready-start-left d-none d-md-flex align-items-center justify-content-center position-absolute left-0">
+                <img src="./assets/images/Arrow-thick-r.png" class="me-3" alt="arrow">
+                <p class="d-inline-block m-0">READY TO <span class="d-block">GET STARTED</span></p>
+            </div>
+        </section>
+
+        <section class="users pb-4">
+            <h1 class="users-title text-center">WHAT<span class="d-block">users think.</span></h1>
+            <div class="container">
+                <div class="swiper py-md-5 position-relative">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide position-relative py-4 bottom-0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img src="./assets/images/user-1.png" class="card-img img-fluid"
+                                                alt="user-image">
+                                            <h5 class="card-title my-2">LAURA SMITH</h5>
+                                            <div class="rating my-3">
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2"></i>
+                                            </div>
+                                            <p class="card-text position-relative">
+                                                <span class="position-absolute qoute">
+                                                    <img src="./assets/images/Qoute.png" class="img-fluid" alt="qoute">
+                                                </span>
+                                                <span class="position-absolute flipped">
+                                                    <img src="./assets/images/Quote-flipped.png" class="img-fluid"
+                                                        alt="quote flipped">
+                                                </span>
+                                                Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-4 col-md-6 d-none d-md-flex align-items-center justify-content-center">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img src="./assets/images/user-2.png" class="card-img img-fluid"
+                                                alt="user-image">
+                                            <h5 class="card-title my-2">JHON SMITH</h5>
+                                            <div class="rating my-3">
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                            </div>
+                                            <p class="card-text position-relative">
+                                                <span class="position-absolute qoute">
+                                                    <img src="./assets/images/Qoute.png" class="img-fluid" alt="qoute">
+                                                </span>
+                                                <span class="position-absolute flipped">
+                                                    <img src="./assets/images/Quote-flipped.png" class="img-fluid"
+                                                        alt="quote flipped">
+                                                </span>
+                                                Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-lg-flex align-items-center justify-content-center">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img src="./assets/images/user-3.png" class="card-img img-fluid"
+                                                alt="user-image">
+                                            <h5 class="card-title my-2">SARA SMITH</h5>
+                                            <div class="rating my-3">
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2"></i>
+                                                <i class="fa-solid fa-star mx-2"></i>
+                                            </div>
+                                            <p class="card-text position-relative">
+                                                <span class="position-absolute qoute">
+                                                    <img src="./assets/images/Qoute.png" class="img-fluid" alt="qoute">
+                                                </span>
+                                                <span class="position-absolute flipped">
+                                                    <img src="./assets/images/Quote-flipped.png" class="img-fluid"
+                                                        alt="quote flipped">
+                                                </span>
+                                                Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide position-relative py-4 bottom-0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img src="./assets/images/user-2.png" class="card-img img-fluid"
+                                                alt="user-image">
+                                            <h5 class="card-title my-2">LAURA SMITH</h5>
+                                            <div class="rating my-3">
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2"></i>
+                                            </div>
+                                            <p class="card-text position-relative">
+                                                <span class="position-absolute qoute">
+                                                    <img src="./assets/images/Qoute.png" class="img-fluid" alt="qoute">
+                                                </span>
+                                                <span class="position-absolute flipped">
+                                                    <img src="./assets/images/Quote-flipped.png" class="img-fluid"
+                                                        alt="quote flipped">
+                                                </span>
+                                                Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-4 col-md-6 d-none d-md-flex align-items-center justify-content-center">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img src="./assets/images/user-1.png" class="card-img img-fluid"
+                                                alt="user-image">
+                                            <h5 class="card-title my-2">JHON SMITH</h5>
+                                            <div class="rating my-3">
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                            </div>
+                                            <p class="card-text position-relative">
+                                                <span class="position-absolute qoute">
+                                                    <img src="./assets/images/Qoute.png" class="img-fluid" alt="qoute">
+                                                </span>
+                                                <span class="position-absolute flipped">
+                                                    <img src="./assets/images/Quote-flipped.png" class="img-fluid"
+                                                        alt="quote flipped">
+                                                </span>
+                                                Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-lg-flex align-items-center justify-content-center">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img src="./assets/images/user-3.png" class="card-img img-fluid"
+                                                alt="user-image">
+                                            <h5 class="card-title my-2">SARA SMITH</h5>
+                                            <div class="rating my-3">
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2"></i>
+                                                <i class="fa-solid fa-star mx-2"></i>
+                                            </div>
+                                            <p class="card-text position-relative">
+                                                <span class="position-absolute qoute">
+                                                    <img src="./assets/images/Qoute.png" class="img-fluid" alt="qoute">
+                                                </span>
+                                                <span class="position-absolute flipped">
+                                                    <img src="./assets/images/Quote-flipped.png" class="img-fluid"
+                                                        alt="quote flipped">
+                                                </span>
+                                                Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide position-relative py-4 bottom-0">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img src="./assets/images/user-3.png" class="card-img img-fluid"
+                                                alt="user-image">
+                                            <h5 class="card-title my-2">LAURA SMITH</h5>
+                                            <div class="rating my-3">
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2"></i>
+                                            </div>
+                                            <p class="card-text position-relative">
+                                                <span class="position-absolute qoute">
+                                                    <img src="./assets/images/Qoute.png" class="img-fluid" alt="qoute">
+                                                </span>
+                                                <span class="position-absolute flipped">
+                                                    <img src="./assets/images/Quote-flipped.png" class="img-fluid"
+                                                        alt="quote flipped">
+                                                </span>
+                                                Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-4 col-md-6 d-none d-md-flex align-items-center justify-content-center">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img src="./assets/images/user-2.png" class="card-img img-fluid"
+                                                alt="user-image">
+                                            <h5 class="card-title my-2">JHON SMITH</h5>
+                                            <div class="rating my-3">
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                            </div>
+                                            <p class="card-text position-relative">
+                                                <span class="position-absolute qoute">
+                                                    <img src="./assets/images/Qoute.png" class="img-fluid" alt="qoute">
+                                                </span>
+                                                <span class="position-absolute flipped">
+                                                    <img src="./assets/images/Quote-flipped.png" class="img-fluid"
+                                                        alt="quote flipped">
+                                                </span>
+                                                Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 d-none d-lg-flex align-items-center justify-content-center">
+                                    <div class="card text-center">
+                                        <div class="card-body">
+                                            <img src="./assets/images/user-1.png" class="card-img img-fluid"
+                                                alt="user-image">
+                                            <h5 class="card-title my-2">SARA SMITH</h5>
+                                            <div class="rating my-3">
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2 active"></i>
+                                                <i class="fa-solid fa-star mx-2"></i>
+                                                <i class="fa-solid fa-star mx-2"></i>
+                                            </div>
+                                            <p class="card-text position-relative">
+                                                <span class="position-absolute qoute">
+                                                    <img src="./assets/images/Qoute.png" class="img-fluid" alt="qoute">
+                                                </span>
+                                                <span class="position-absolute flipped">
+                                                    <img src="./assets/images/Quote-flipped.png" class="img-fluid"
+                                                        alt="quote flipped">
+                                                </span>
+                                                Lorem ipsum dolor sit amet, consectetur
+                                                adipiscing
+                                                elit, sed do
+                                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev custom-prev">
+                        <img src="./assets/images/Arrow-thick-l.png" alt="Arrow left">
+                    </div>
+                    <div class="swiper-button-next custom-next">
+                        <img src="./assets/images/Arrow-thick-r.png" alt="Arrow right">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="news-letter mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 offset-xl-6 col-lg-7 offset-lg-5 text-center">
+                        <h1 class="sub-title">
+                            SUBSCRIBE
+                            <span class="d-block">to our newsletter</span>
+                        </h1>
+                        <p class="sub-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </p>
+
+                        <form action="" class="subscribe" id="subscribe">
+                            <input type="text" name="name" class="form-control custom-form mb-5" id="name"
+                                placeholder="NAME" required>
+                            <input type="email" name="mail" class="form-control custom-form mb-5" id="email"
+                                placeholder="MAIL" required>
+                            <textarea name="message" class="form-control custom-form custom-textarea" id="message"
+                                placeholder="MESSAGE" required></textarea>
+                            <button type="submit" class="btn btn--purple my-5">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-xl-4 mb-4 mb-xl-0">
+                        <h5>About</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Mission Statement</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4 mb-4 mb-xl-0">
+                        <h5>What We Do</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">News and Stories</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#">Take Action</a></li>
+                            <li><a href="#">Recommendations</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-xl-4 third-col">
+                        <h5 class="mb-5">Sign Up To Receive<span class="d-block">Our Newsletter</span></h5>
+                        <form class="mb-5">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="newsletter-email"
+                                    placeholder="Enter your email" required>
+                            </div>
+                            <button type="submit" class="btn btn-form">Subscribe</button>
+                        </form>
+                        <div class="mt-4 d-flex align-items-center">
+                            <h6 class="me-2">Follow Us!</h6>
+                            <ul class="social-icons ps-4">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 
 </body>

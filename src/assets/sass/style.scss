@@ -7,7 +7,7 @@
 @import "config/global.scss";
 @import "sections/header.scss";
 @import "sections/courses&about.scss";
-
+@import "sections/newsletter&footer.scss";
 
 // Frequently used styles
 
@@ -15,14 +15,18 @@
     padding: 18px 24px;
     color: #fff;
     line-height: 12px;
-    font-family: 'Oswald', 'Courier New', Courier, monospace;
+    font-family: "Oswald";
     font-weight: 500;
     border-radius: 0 !important;
 }
 
 .btn--purple {
     background-color: $secondary-color;
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus,
+    &:active:hover {
         color: #000 !important;
         background-color: #fff;
     }
