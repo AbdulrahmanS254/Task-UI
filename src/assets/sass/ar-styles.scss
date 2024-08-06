@@ -1,21 +1,24 @@
-@import "bootstrap/scss/bootstrap";
 @import "wow.js/css/libs/animate.css";
-
 @import "config/colors.scss";
 @import "config/fonts.scss";
 @import "config/mixins";
 @import "config/global.scss";
-@import "sections/header.scss";
-@import "sections/courses&about.scss";
-@import "sections/newsletter&footer.scss";
+@import "sections-ar/header.scss";
+@import "sections-ar/courses&about.scss";
+@import "sections-ar/newsletter&footer.scss";
+* {
+    font-family: 'Cairo Ar','Courier New', Courier, monospace;
+}
 
-// Frequently used styles
+.navbar-brand__custom::before {
+    right: -24px;
+}
 
 .btn {
     padding: 18px 24px;
     color: #fff;
     line-height: 12px;
-    font-family: "Oswald";
+    font-family: "Cairo Ar";
     font-weight: 500;
     border-radius: 0 !important;
 }

@@ -58,8 +58,7 @@ a.nav-link {
     }
 }
 
-.signIn,
-.language {
+.signIn, .language {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,10 +116,11 @@ section.header-swiper {
     z-index: -2;
 }
 
+
 .swiper-desc-head {
     max-width: 380px;
     h3 {
-        line-height: 1.75rem;
+        line-height: 35px;
         text-transform: uppercase;
         margin-bottom: 25px;
     }
@@ -134,30 +134,30 @@ section.header-swiper {
 }
 
 .swiper-button-prev {
-    left: 27%;
+    right: 27% !important;
     top: 90%;
 
     &::after {
-        content: "";
+        display: none;
     }
 }
 .swiper-button-next {
-    right: 27%;
+    left: 27% !important;
     top: 90%;
 
     &::after {
-        content: "";
+        display: none;
     }
 }
 
 .swiper-slide .ui {
     height: 95px;
     width: 170px;
-    font-size: 120px;
+    font-size: 80px;
     line-height: 95px;
     font-weight: bold;
     top: 85px;
-    left: 60px;
+    right: 60px;
     .dot {
         color: $secondary-color;
     }
@@ -168,7 +168,7 @@ section.header-swiper {
     writing-mode: tb-rl;
     letter-spacing: 8px;
     transform: rotate(180deg);
-    left: 60px;
+    right: 60px;
     bottom: 140px;
     transition: all 0.2s;
 
@@ -185,13 +185,13 @@ section.header-swiper {
     align-items: center;
     justify-content: center;
     border: 2px solid #fff;
-    border-right: none;
+    border-left: none;
     top: 60px;
-    right: -12px;
+    left: -12px;
     font-size: 18px;
     letter-spacing: 4px;
     font-weight: bold;
-    padding-right: 12px;
+    padding-left: 12px;
     span {
         font-size: 35px;
         line-height: 35px;
@@ -200,25 +200,27 @@ section.header-swiper {
 }
 
 .swiper-slide .pro-designer {
-    left: 13%;
+    right: 13%;
     top: 60%;
     font-weight: bold;
 
     span {
         @include cube;
+        &::before {
+            right: -24px;
+        }
     }
 }
+
 
 /*===================== STATISTICS SECTION =====================*/
 
 section.statistics {
     padding: 95px 0;
-    box-shadow:
-        0 -18px 10px -5px rgba(0, 0, 0, 0.3),
-        0 18px 10px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -18px 10px -5px rgba(0, 0, 0, 0.3), 0 18px 10px -5px rgba(0, 0, 0, 0.3);
 
     .stat-number {
-        font-family: "Oswald";
+        font-family: 'Oswald';
         font-size: 50px;
         font-weight: 500;
         span {
@@ -227,9 +229,8 @@ section.statistics {
     }
 
     .stat-text {
-        font-family: "krub";
         font-size: 22px;
-        line-height: 25px;
+        line-height: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -240,6 +241,15 @@ section.statistics {
 }
 
 /*===================== MEDIA QUERIES =====================*/
+@media(max-width: 1200px) {
+    .swiper-slide {
+        .ui {
+            font-size: 60px;
+            line-height: 70px;
+        }
+    }
+}
+
 @media (max-width: 991.8px) {
     .navbar__custom {
         padding: 22.5px 27.5px;
@@ -248,7 +258,7 @@ section.statistics {
         padding: 10px 0px;
     }
 
-    // stats section
+    // stats section 
     section.statistics {
         .stat-text {
             width: 100%;
@@ -304,11 +314,11 @@ section.statistics {
         }
 
         .small-mod {
-            img {
-                margin-left: -200%;
+            img { 
+                margin-right: -200%;
             }
             .purple-circle {
-                left: -190%;
+                right: -190%;
             }
         }
         .small-mod-2 {

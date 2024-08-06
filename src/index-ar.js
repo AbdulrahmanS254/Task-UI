@@ -3,7 +3,7 @@ import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
 import WOW from "wow.js";
 import "@fortawesome/fontawesome-free/js/all.js";
-import "./assets/sass/en-styles.scss";
+import "./assets/sass/ar-styles.scss";
 
 const swiper = new Swiper(".swiper", {
     direction: "horizontal",
@@ -17,6 +17,8 @@ const swiper = new Swiper(".swiper", {
 
 new WOW().init();
 
+
+// video player code
 document
     .getElementById("video-thumbnail-container")
     .addEventListener("click", function () {

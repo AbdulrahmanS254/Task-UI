@@ -1,46 +1,60 @@
 @font-face {
     font-family: "krub";
-    src: url("../fonts/Krub/Krub-Regular.ttf") format("ttf");
+    src: url("../fonts/Krub/Krub-Regular.ttf") format("truetype");
     font-weight: normal;
 }
 @font-face {
     font-family: "krub";
-    src: url("../fonts/Krub/Krub-SemiBold.ttf") format("ttf");
+    src: url("../fonts/Krub/Krub-SemiBold.ttf") format("truetype");
     font-weight: bold;
 }
 @font-face {
     font-family: "krub";
-    src: url("../fonts/Krub/Krub-Bold.ttf") format("ttf");
+    src: url("../fonts/Krub/Krub-Bold.ttf") format("truetype");
     font-weight: bolder;
 }
 
-
-
 @font-face {
     font-family: "Oswald";
-    src: url("../fonts/Oswald/Oswald-Medium.ttf") format("ttf");
+    src: url("../fonts/Oswald/Oswald-Medium.ttf") format("truetype");
     font-weight: lighter;
 }
 @font-face {
     font-family: "Oswald";
-    src: url("../fonts/Oswald/Oswald-Regular.ttf") format("ttf");
+    src: url("../fonts/Oswald/Oswald-Regular.ttf") format("truetype");
     font-weight: normal;
 }
 @font-face {
     font-family: "Oswald";
-    src: url("../fonts/Oswald/Oswald-SemiBold.ttf") format("ttf");
+    src: url("../fonts/Oswald/Oswald-SemiBold.ttf") format("truetype");
     font-weight: bold;
 }
 @font-face {
     font-family: "Oswald";
-    src: url("../fonts/Oswald/Oswald-bold.ttf") format("ttf");
+    src: url("../fonts/Oswald/Oswald-bold.ttf") format("truetype");
     font-weight: bolder;
 }
 
-// @font-face {
-//     font-family: "Janna LT";
-//     src:
-//         local("Janna LT"),
-//         url("../fonts/janna-bold.woff") format("ttf");
-//     font-weight: bold;
-// }
+@font-face {
+    font-family: "Cairo Ar";
+    src: url("../fonts/Cairo-arabic/Cairo-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Cairo Ar";
+    src: url("../fonts/Cairo-arabic/Cairo-Medium.ttf") format("truetype");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: "Cairo Ar";
+    src: url("../fonts/Cairo-arabic/Cairo-SemiBold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Cairo Ar";
+    src: url("../fonts/Cairo-arabic/Cairo-Bold.ttf") format("truetype");
+    font-weight: bolder;
+}

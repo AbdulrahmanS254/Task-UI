@@ -3,17 +3,16 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require("path");
-const { Warning } = require("postcss");
 
 module.exports = {
     entry: {
         app: "./src/index.js",
+        appAr: "./src/index-ar.js",
     },
 
     output: {
-        path: __dirname + "/app",
+        path: path.resolve(__dirname, "dist"),
         filename: "[name].js",
-        publicPath: "/",
     },
 
     module: {
@@ -25,7 +24,6 @@ module.exports = {
 
             {
                 test: /\.(sa|sc|c)ss$/,
-
                 use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
             },
 
@@ -72,12 +70,17 @@ module.exports = {
             filename: "index.html",
             template: "./src/index.html",
             chunks: ["app"],
+            inject: 'body',
         }),
-
+        new HtmlWebpackPlugin({
+            filename: "index-ar.html",
+            template: "./src/index-ar.html",
+            chunks: ["appAr"],
+            inject: 'body',
+        }),
         new CleanWebpackPlugin(),
-
         new MiniCssExtractPlugin({
-            filename: "assets/css/style.css",
+            filename: 'assets/css/[name].css',
         }),
     ],
 
@@ -87,7 +90,7 @@ module.exports = {
 
     devServer: {
         static: {
-            directory: path.join(__dirname, "app"),
+            directory: path.join(__dirname, "dist"),
         },
         compress: true,
         port: 9008,
